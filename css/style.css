@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+	font-family: BentonSansRegular,'Arial Narrow',Arial,sans-serif;
+	/*	border: 1px solid black;*/
+}
+
+body{
+	margin:0;
+}
+
+.neighborhood{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 15px 0 10px;
+}
+
+.neighborhood-title{
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.neighborhood-title .emphasis{
+	font-weight: 600;
+	padding-right: 1.2rem;
+}
+
+.section{
+	background-color: #f5f5f5;
+}
+
+.carousel{
+	display: flex;
+	flex:row;
+	justify-content: center;
+}
+
+.feature{
+	max-width: 341px;
+}
+
+.feature .media{
+	margin: 0px;
+	height: 221px;
+}
+
+.section .carousel .feature .media img{
+	display: block;
+	margin:0 auto;
+	width: 100%;
+}
+
+.content-background{
+	background-color: #fff;
+	border: 1px solid black;
+}
+
+.feature .content{
+	margin: 0px 20px;
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+.cost{
+	margin-bottom: 0;
+}
+
+.cost-comparison ul{
+	display: flex;
+	flex: row;
+	list-style: none;
+	justify-content: space-around;
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+.cost-comparison .cost-group p{
+	margin-bottom: 0px;
+}
+
+.dorm-description{
+	margin: 0px 0px 15px;
+}
+
+.feature .content a.button{
+	display: block;
+	margin: 25px auto 0px;
+	padding: .5rem 1rem .5625rem;
+	width: 70%;
+	border: 2px solid #900;
+	text-decoration: none;
+	font-weight: 400;
+	text-align: center;
+	background-color: #900;
+	color: #fff;
+	border-radius: 1.25em;
+	
+}
+
+.slick-prev, .slick-next{
+	display: block;
+    top: 186px;
+	position: absolute;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+.slick-next, .slick-next:focus, .slick-prev, .slick-prev:focus {
+    height: 36px!important;
+    width: 36px!important;
+    margin-top: 0;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    background: rgba(153,0,0,.8);
+    border-radius: 0;
+}
+
+.slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+    color: transparent;
+    outline: 0;
+}
+
+a.button, button, input.button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: solid;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem 1rem .5625rem;
+    background-color: #900;
+    border-color: #900;
+    color: #fff;
+    border-radius: 1.25rem;
+    transition: all .18s ease-in-out;
+    border-width: 2px;
+    font-size: 1rem;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.slick-slider {
+    -moz-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-prev:before {
+    margin-right: 3px;
+}
+
+.slick-next:before {
+    margin-left: 3px;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-family: iucomm;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.slick-prev:before {
+    content: "";
+}
+
+.slick-next:before, .slick-prev:before {
+    line-height: 1;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots{
+	display: block;
+    top: 372px;
+	position: absolute;
+    bottom: -45px;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.carousel.slick-dots {
+    top: 265px;
+    bottom: auto;
+    margin: 0;
+    text-align: right;
+    right: 12px;
+}
